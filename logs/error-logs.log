@@ -1,0 +1,402 @@
+2025-05-13 21:23:07:237 [31merror[39m: [31mTypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31mStack: TypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31m    at listarTodos (/home/andre/Documentos/SUI/controllers/servicoController.js:46:44)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-05-13 21:23:38:2338 [31merror[39m: [31mTypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31mStack: TypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31m    at listarTodos (/home/andre/Documentos/SUI/controllers/servicoController.js:46:44)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-05-13 21:24:31:2431 [31merror[39m: [31mTypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31mStack: TypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31m    at listarTodos (/home/andre/Documentos/SUI/controllers/servicoController.js:46:44)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-05-13 21:28:18:2818 [31merror[39m: [31mTypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31mStack: TypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31m    at listarTodos (/home/andre/Documentos/SUI/controllers/servicoController.js:46:44)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-05-13 21:33:14:3314 [31merror[39m: [31mTypeError: Do not know how to serialize a BigInt[39m
+[31mStack: TypeError: Do not know how to serialize a BigInt[39m
+[31m    at JSON.stringify (<anonymous>)[39m
+[31m    at stringify (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:1020:12)[39m
+[31m    at ServerResponse.json (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:243:14)[39m
+[31m    at /home/andre/Documentos/SUI/routes/categoriasRoute.js:11:9[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-05-13 21:37:20:3720 [31merror[39m: [31mApiError: Rota não encontrada: /api/categoria[39m
+[31mStack: ApiError: Rota não encontrada: /api/categoria[39m
+[31m    at notFoundHandler (/home/andre/Documentos/SUI/middleware/errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at trimPrefix (/home/andre/Documentos/SUI/node_modules/router/index.js:342:13)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:297:9[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at urlencodedParser (/home/andre/Documentos/SUI/node_modules/body-parser/lib/types/urlencoded.js:68:7)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at trimPrefix (/home/andre/Documentos/SUI/node_modules/router/index.js:342:13)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:297:9[39m
+2025-05-13 21:37:25:3725 [31merror[39m: [31mTypeError: Do not know how to serialize a BigInt[39m
+[31mStack: TypeError: Do not know how to serialize a BigInt[39m
+[31m    at JSON.stringify (<anonymous>)[39m
+[31m    at stringify (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:1020:12)[39m
+[31m    at ServerResponse.json (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:243:14)[39m
+[31m    at /home/andre/Documentos/SUI/routes/categoriasRoute.js:11:9[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-05-13 21:38:02:382 [31merror[39m: [31mApiError: Rota não encontrada: /api/auth/login[39m
+[31mStack: ApiError: Rota não encontrada: /api/auth/login[39m
+[31m    at notFoundHandler (/home/andre/Documentos/SUI/middleware/errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at trimPrefix (/home/andre/Documentos/SUI/node_modules/router/index.js:342:13)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:297:9[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:688:15[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:276:14)[39m
+[31m    at Function.handle (/home/andre/Documentos/SUI/node_modules/router/index.js:186:3)[39m
+[31m    at router (/home/andre/Documentos/SUI/node_modules/router/index.js:60:12)[39m
+2025-05-13 21:38:31:3831 [31merror[39m: [31mApiError: Rota não encontrada: /api/auth/login[39m
+[31mStack: ApiError: Rota não encontrada: /api/auth/login[39m
+[31m    at notFoundHandler (/home/andre/Documentos/SUI/middleware/errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at trimPrefix (/home/andre/Documentos/SUI/node_modules/router/index.js:342:13)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:297:9[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:688:15[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:276:14)[39m
+[31m    at Function.handle (/home/andre/Documentos/SUI/node_modules/router/index.js:186:3)[39m
+[31m    at router (/home/andre/Documentos/SUI/node_modules/router/index.js:60:12)[39m
+2025-05-13 21:38:34:3834 [31merror[39m: [31mApiError: Rota não encontrada: /api/auth/login[39m
+[31mStack: ApiError: Rota não encontrada: /api/auth/login[39m
+[31m    at notFoundHandler (/home/andre/Documentos/SUI/middleware/errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at trimPrefix (/home/andre/Documentos/SUI/node_modules/router/index.js:342:13)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:297:9[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:688:15[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:276:14)[39m
+[31m    at Function.handle (/home/andre/Documentos/SUI/node_modules/router/index.js:186:3)[39m
+[31m    at router (/home/andre/Documentos/SUI/node_modules/router/index.js:60:12)[39m
+2025-05-13 21:38:58:3858 [31merror[39m: [31mApiError: Rota não encontrada: /api/auth/login[39m
+[31mStack: ApiError: Rota não encontrada: /api/auth/login[39m
+[31m    at notFoundHandler (/home/andre/Documentos/SUI/middleware/errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at trimPrefix (/home/andre/Documentos/SUI/node_modules/router/index.js:342:13)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:297:9[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:688:15[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:276:14)[39m
+[31m    at Function.handle (/home/andre/Documentos/SUI/node_modules/router/index.js:186:3)[39m
+[31m    at router (/home/andre/Documentos/SUI/node_modules/router/index.js:60:12)[39m
+2025-05-13 21:39:16:3916 [31merror[39m: [31mApiError: Rota não encontrada: /api/auth/login[39m
+[31mStack: ApiError: Rota não encontrada: /api/auth/login[39m
+[31m    at notFoundHandler (/home/andre/Documentos/SUI/middleware/errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at trimPrefix (/home/andre/Documentos/SUI/node_modules/router/index.js:342:13)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:297:9[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:688:15[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:276:14)[39m
+[31m    at Function.handle (/home/andre/Documentos/SUI/node_modules/router/index.js:186:3)[39m
+[31m    at router (/home/andre/Documentos/SUI/node_modules/router/index.js:60:12)[39m
+2025-05-13 21:39:41:3941 [31merror[39m: [31mApiError: Rota não encontrada: /api/auth/login[39m
+[31mStack: ApiError: Rota não encontrada: /api/auth/login[39m
+[31m    at notFoundHandler (/home/andre/Documentos/SUI/middleware/errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at trimPrefix (/home/andre/Documentos/SUI/node_modules/router/index.js:342:13)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:297:9[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:688:15[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:276:14)[39m
+[31m    at Function.handle (/home/andre/Documentos/SUI/node_modules/router/index.js:186:3)[39m
+[31m    at router (/home/andre/Documentos/SUI/node_modules/router/index.js:60:12)[39m
+2025-05-13 21:39:44:3944 [31merror[39m: [31mApiError: Rota não encontrada: /api/auth[39m
+[31mStack: ApiError: Rota não encontrada: /api/auth[39m
+[31m    at notFoundHandler (/home/andre/Documentos/SUI/middleware/errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at trimPrefix (/home/andre/Documentos/SUI/node_modules/router/index.js:342:13)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:297:9[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:688:15[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:276:14)[39m
+[31m    at Function.handle (/home/andre/Documentos/SUI/node_modules/router/index.js:186:3)[39m
+[31m    at router (/home/andre/Documentos/SUI/node_modules/router/index.js:60:12)[39m
+2025-05-13 21:40:21:4021 [31merror[39m: [31mApiError: Rota não encontrada: /api/login[39m
+[31mStack: ApiError: Rota não encontrada: /api/login[39m
+[31m    at notFoundHandler (/home/andre/Documentos/SUI/middleware/errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at trimPrefix (/home/andre/Documentos/SUI/node_modules/router/index.js:342:13)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:297:9[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at urlencodedParser (/home/andre/Documentos/SUI/node_modules/body-parser/lib/types/urlencoded.js:57:7)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at trimPrefix (/home/andre/Documentos/SUI/node_modules/router/index.js:342:13)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:297:9[39m
+2025-05-13 21:41:08:418 [31merror[39m: [31mTypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31mStack: TypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31m    at listarTodos (/home/andre/Documentos/SUI/controllers/servicoController.js:46:44)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-05-13 21:42:56:4256 [31merror[39m: [31mApiError: Token de autenticação não fornecido[39m
+[31mStack: ApiError: Token de autenticação não fornecido[39m
+[31m    at authMiddleware (/home/andre/Documentos/SUI/middleware/authMiddleware.js:12:13)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/lib/route.js:157:13)[39m
+[31m    at Route.dispatch (/home/andre/Documentos/SUI/node_modules/router/lib/route.js:117:3)[39m
+[31m    at handle (/home/andre/Documentos/SUI/node_modules/router/index.js:435:11)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:295:15[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at Function.handle (/home/andre/Documentos/SUI/node_modules/router/index.js:186:3)[39m
+2025-05-13 21:48:52:4852 [31merror[39m: [31mTypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31mStack: TypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31m    at listarTodos (/home/andre/Documentos/SUI/controllers/servicoController.js:46:44)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-05-13 21:53:45:5345 [31merror[39m: [31mTypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31mStack: TypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31m    at listarTodos (/home/andre/Documentos/SUI/controllers/servicoController.js:46:44)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-05-13 21:53:48:5348 [31merror[39m: [31mTypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31mStack: TypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31m    at listarTodos (/home/andre/Documentos/SUI/controllers/servicoController.js:46:44)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-05-13 21:55:25:5525 [31merror[39m: [31mTypeError: Do not know how to serialize a BigInt[39m
+[31mStack: TypeError: Do not know how to serialize a BigInt[39m
+[31m    at JSON.stringify (<anonymous>)[39m
+[31m    at stringify (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:1020:12)[39m
+[31m    at ServerResponse.json (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:243:14)[39m
+[31m    at listarTodos (/home/andre/Documentos/SUI/controllers/servicoController.js:48:11)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-05-13 21:55:41:5541 [31merror[39m: [31mTypeError: Do not know how to serialize a BigInt[39m
+[31mStack: TypeError: Do not know how to serialize a BigInt[39m
+[31m    at JSON.stringify (<anonymous>)[39m
+[31m    at stringify (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:1020:12)[39m
+[31m    at ServerResponse.json (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:243:14)[39m
+[31m    at listarTodos (/home/andre/Documentos/SUI/controllers/servicoController.js:48:11)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-05-13 21:55:58:5558 [31merror[39m: [31mTypeError: Do not know how to serialize a BigInt[39m
+[31mStack: TypeError: Do not know how to serialize a BigInt[39m
+[31m    at JSON.stringify (<anonymous>)[39m
+[31m    at stringify (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:1020:12)[39m
+[31m    at ServerResponse.json (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:243:14)[39m
+[31m    at listarTodos (/home/andre/Documentos/SUI/controllers/servicoController.js:48:11)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-05-13 21:58:51:5851 [31merror[39m: [31mTypeError: Do not know how to serialize a BigInt[39m
+[31mStack: TypeError: Do not know how to serialize a BigInt[39m
+[31m    at JSON.stringify (<anonymous>)[39m
+[31m    at stringify (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:1020:12)[39m
+[31m    at ServerResponse.json (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:243:14)[39m
+[31m    at listarTodos (/home/andre/Documentos/SUI/controllers/servicoController.js:48:11)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-05-13 22:00:24:024 [31merror[39m: [31mTypeError: Do not know how to serialize a BigInt[39m
+[31mStack: TypeError: Do not know how to serialize a BigInt[39m
+[31m    at JSON.stringify (<anonymous>)[39m
+[31m    at stringify (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:1020:12)[39m
+[31m    at ServerResponse.json (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:243:14)[39m
+[31m    at /home/andre/Documentos/SUI/routes/categoriasRoute.js:11:9[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-05-13 22:06:30:630 [31merror[39m: [31mTypeError: Do not know how to serialize a BigInt[39m
+[31mStack: TypeError: Do not know how to serialize a BigInt[39m
+[31m    at JSON.stringify (<anonymous>)[39m
+[31m    at stringify (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:1020:12)[39m
+[31m    at ServerResponse.json (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:243:14)[39m
+[31m    at /home/andre/Documentos/SUI/routes/categoriasRoute.js:11:9[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-05-13 22:06:33:633 [31merror[39m: [31mTypeError: Do not know how to serialize a BigInt[39m
+[31mStack: TypeError: Do not know how to serialize a BigInt[39m
+[31m    at JSON.stringify (<anonymous>)[39m
+[31m    at stringify (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:1020:12)[39m
+[31m    at ServerResponse.json (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:243:14)[39m
+[31m    at /home/andre/Documentos/SUI/routes/categoriasRoute.js:11:9[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-05-13 22:13:19:1319 [31merror[39m: [31mTypeError: Do not know how to serialize a BigInt[39m
+[31mStack: TypeError: Do not know how to serialize a BigInt[39m
+[31m    at JSON.stringify (<anonymous>)[39m
+[31m    at stringify (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:1020:12)[39m
+[31m    at ServerResponse.json (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:243:14)[39m
+[31m    at /home/andre/Documentos/SUI/routes/categoriasRoute.js:11:9[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-05-13 22:15:11:1511 [31merror[39m: [31mTypeError: Do not know how to serialize a BigInt[39m
+[31mStack: TypeError: Do not know how to serialize a BigInt[39m
+[31m    at JSON.stringify (<anonymous>)[39m
+[31m    at stringify (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:1020:12)[39m
+[31m    at ServerResponse.json (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:243:14)[39m
+[31m    at /home/andre/Documentos/SUI/routes/categoriasRoute.js:11:9[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-05-13 22:19:17:1917 [31merror[39m: [31mApiError: Rota não encontrada: /api/locais/servicos[39m
+[31mStack: ApiError: Rota não encontrada: /api/locais/servicos[39m
+[31m    at notFoundHandler (/home/andre/Documentos/SUI/middleware/errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at trimPrefix (/home/andre/Documentos/SUI/node_modules/router/index.js:342:13)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:297:9[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:688:15[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:276:14)[39m
+[31m    at Function.handle (/home/andre/Documentos/SUI/node_modules/router/index.js:186:3)[39m
+[31m    at router (/home/andre/Documentos/SUI/node_modules/router/index.js:60:12)[39m
+2025-05-13 22:19:22:1922 [31merror[39m: [31mApiError: Rota não encontrada: /api/locais/servico[39m
+[31mStack: ApiError: Rota não encontrada: /api/locais/servico[39m
+[31m    at notFoundHandler (/home/andre/Documentos/SUI/middleware/errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at trimPrefix (/home/andre/Documentos/SUI/node_modules/router/index.js:342:13)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:297:9[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:688:15[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:276:14)[39m
+[31m    at Function.handle (/home/andre/Documentos/SUI/node_modules/router/index.js:186:3)[39m
+[31m    at router (/home/andre/Documentos/SUI/node_modules/router/index.js:60:12)[39m
+2025-05-13 22:19:45:1945 [31merror[39m: [31mApiError: Rota não encontrada: /api/servico[39m
+[31mStack: ApiError: Rota não encontrada: /api/servico[39m
+[31m    at notFoundHandler (/home/andre/Documentos/SUI/middleware/errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at trimPrefix (/home/andre/Documentos/SUI/node_modules/router/index.js:342:13)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:297:9[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at urlencodedParser (/home/andre/Documentos/SUI/node_modules/body-parser/lib/types/urlencoded.js:68:7)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at trimPrefix (/home/andre/Documentos/SUI/node_modules/router/index.js:342:13)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:297:9[39m
+2025-05-13 22:26:06:266 [31merror[39m: [31mApiError: Rota não encontrada: /api/auth/login[39m
+[31mStack: ApiError: Rota não encontrada: /api/auth/login[39m
+[31m    at notFoundHandler (/home/andre/Documentos/SUI/middleware/errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at trimPrefix (/home/andre/Documentos/SUI/node_modules/router/index.js:342:13)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:297:9[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:688:15[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:276:14)[39m
+[31m    at Function.handle (/home/andre/Documentos/SUI/node_modules/router/index.js:186:3)[39m
+[31m    at router (/home/andre/Documentos/SUI/node_modules/router/index.js:60:12)[39m
+2025-05-13 22:26:39:2639 [31merror[39m: [31mApiError: Rota não encontrada: /api/auth/login[39m
+[31mStack: ApiError: Rota não encontrada: /api/auth/login[39m
+[31m    at notFoundHandler (/home/andre/Documentos/SUI/middleware/errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at trimPrefix (/home/andre/Documentos/SUI/node_modules/router/index.js:342:13)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:297:9[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:688:15[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:276:14)[39m
+[31m    at Function.handle (/home/andre/Documentos/SUI/node_modules/router/index.js:186:3)[39m
+[31m    at router (/home/andre/Documentos/SUI/node_modules/router/index.js:60:12)[39m
+2025-05-13 22:26:45:2645 [31merror[39m: [31mApiError: Credenciais inválidas[39m
+[31mStack: ApiError: Credenciais inválidas[39m
+[31m    at login (/home/andre/Documentos/SUI/controllers/authController.js:42:15)[39m
+2025-05-13 22:27:21:2721 [31merror[39m: [31mApiError: Credenciais inválidas[39m
+[31mStack: ApiError: Credenciais inválidas[39m
+[31m    at login (/home/andre/Documentos/SUI/controllers/authController.js:42:15)[39m
+2025-05-13 22:34:18:3418 [31merror[39m: [31mApiError: Rota não encontrada: /api/auth/cadastro[39m
+[31mStack: ApiError: Rota não encontrada: /api/auth/cadastro[39m
+[31m    at notFoundHandler (/home/andre/Documentos/SUI/middleware/errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at trimPrefix (/home/andre/Documentos/SUI/node_modules/router/index.js:342:13)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:297:9[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:688:15[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:276:14)[39m
+[31m    at Function.handle (/home/andre/Documentos/SUI/node_modules/router/index.js:186:3)[39m
+[31m    at router (/home/andre/Documentos/SUI/node_modules/router/index.js:60:12)[39m
+2025-05-13 22:34:48:3448 [31merror[39m: [31mApiError: Token de autenticação não fornecido[39m
+[31mStack: ApiError: Token de autenticação não fornecido[39m
+[31m    at authMiddleware (/home/andre/Documentos/SUI/middleware/authMiddleware.js:12:13)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/lib/route.js:157:13)[39m
+[31m    at Route.dispatch (/home/andre/Documentos/SUI/node_modules/router/lib/route.js:117:3)[39m
+[31m    at handle (/home/andre/Documentos/SUI/node_modules/router/index.js:435:11)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:295:15[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at Function.handle (/home/andre/Documentos/SUI/node_modules/router/index.js:186:3)[39m
+2025-05-13 22:37:54:3754 [31merror[39m: [31mApiError: Token de autenticação não fornecido[39m
+[31mStack: ApiError: Token de autenticação não fornecido[39m
+[31m    at authMiddleware (/home/andre/Documentos/SUI/middleware/authMiddleware.js:12:13)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/lib/route.js:157:13)[39m
+[31m    at Route.dispatch (/home/andre/Documentos/SUI/node_modules/router/lib/route.js:117:3)[39m
+[31m    at handle (/home/andre/Documentos/SUI/node_modules/router/index.js:435:11)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:295:15[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at Function.handle (/home/andre/Documentos/SUI/node_modules/router/index.js:186:3)[39m
+2025-05-13 22:39:13:3913 [31merror[39m: [31mApiError: Token de autenticação não fornecido[39m
+[31mStack: ApiError: Token de autenticação não fornecido[39m
+[31m    at authMiddleware (/home/andre/Documentos/SUI/middleware/authMiddleware.js:12:13)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/lib/route.js:157:13)[39m
+[31m    at Route.dispatch (/home/andre/Documentos/SUI/node_modules/router/lib/route.js:117:3)[39m
+[31m    at handle (/home/andre/Documentos/SUI/node_modules/router/index.js:435:11)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:295:15[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at Function.handle (/home/andre/Documentos/SUI/node_modules/router/index.js:186:3)[39m
+2025-05-13 22:39:15:3915 [31merror[39m: [31mApiError: Token de autenticação não fornecido[39m
+[31mStack: ApiError: Token de autenticação não fornecido[39m
+[31m    at authMiddleware (/home/andre/Documentos/SUI/middleware/authMiddleware.js:12:13)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/lib/route.js:157:13)[39m
+[31m    at Route.dispatch (/home/andre/Documentos/SUI/node_modules/router/lib/route.js:117:3)[39m
+[31m    at handle (/home/andre/Documentos/SUI/node_modules/router/index.js:435:11)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:295:15[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at Function.handle (/home/andre/Documentos/SUI/node_modules/router/index.js:186:3)[39m
+2025-05-13 22:39:36:3936 [31merror[39m: [31mTypeError: Do not know how to serialize a BigInt[39m
+[31mStack: TypeError: Do not know how to serialize a BigInt[39m
+[31m    at JSON.stringify (<anonymous>)[39m
+[31m    at stringify (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:1020:12)[39m
+[31m    at ServerResponse.json (/home/andre/Documentos/SUI/node_modules/express/lib/response.js:243:14)[39m
+[31m    at registrar (/home/andre/Documentos/SUI/controllers/authController.js:138:23)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-05-13 22:43:43:4343 [31merror[39m: [31mApiError: Rota não encontrada: /api/auth/registrar[39m
+[31mStack: ApiError: Rota não encontrada: /api/auth/registrar[39m
+[31m    at notFoundHandler (/home/andre/Documentos/SUI/middleware/errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at trimPrefix (/home/andre/Documentos/SUI/node_modules/router/index.js:342:13)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:297:9[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:688:15[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:276:14)[39m
+[31m    at Function.handle (/home/andre/Documentos/SUI/node_modules/router/index.js:186:3)[39m
+[31m    at router (/home/andre/Documentos/SUI/node_modules/router/index.js:60:12)[39m
+2025-05-13 22:44:22:4422 [31merror[39m: [31mApiError: Rota não encontrada: /api/auth/registrar[39m
+[31mStack: ApiError: Rota não encontrada: /api/auth/registrar[39m
+[31m    at notFoundHandler (/home/andre/Documentos/SUI/middleware/errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at trimPrefix (/home/andre/Documentos/SUI/node_modules/router/index.js:342:13)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:297:9[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:688:15[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:276:14)[39m
+[31m    at Function.handle (/home/andre/Documentos/SUI/node_modules/router/index.js:186:3)[39m
+[31m    at router (/home/andre/Documentos/SUI/node_modules/router/index.js:60:12)[39m
+2025-05-13 22:44:47:4447 [31merror[39m: [31mApiError: Email já está em uso[39m
+[31mStack: ApiError: Email já está em uso[39m
+[31m    at registrar (/home/andre/Documentos/SUI/controllers/authController.js:127:15)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-05-13 22:45:42:4542 [31merror[39m: [31mApiError: Rota não encontrada: /api/auth/login[39m
+[31mStack: ApiError: Rota não encontrada: /api/auth/login[39m
+[31m    at notFoundHandler (/home/andre/Documentos/SUI/middleware/errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (/home/andre/Documentos/SUI/node_modules/router/lib/layer.js:152:17)[39m
+[31m    at trimPrefix (/home/andre/Documentos/SUI/node_modules/router/index.js:342:13)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:297:9[39m
+[31m    at processParams (/home/andre/Documentos/SUI/node_modules/router/index.js:582:12)[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:291:5)[39m
+[31m    at /home/andre/Documentos/SUI/node_modules/router/index.js:688:15[39m
+[31m    at next (/home/andre/Documentos/SUI/node_modules/router/index.js:276:14)[39m
+[31m    at Function.handle (/home/andre/Documentos/SUI/node_modules/router/index.js:186:3)[39m
+[31m    at router (/home/andre/Documentos/SUI/node_modules/router/index.js:60:12)[39m
