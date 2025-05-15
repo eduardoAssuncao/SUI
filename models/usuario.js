@@ -10,8 +10,11 @@ class Usuario {
    */
   static async buscarPorId(id) {
     try {
-      const result = await db.query('SELECT id, nome, email, cargo, ativo FROM usuarios WHERE id = ?', [id]);
-      return result.length > 0 ? result[0] : null;
+      const { rows } = await db.query(
+        'SELECT id, nome, email, cargo, ativo FROM usuarios WHERE id = $1', 
+        [id]
+      );
+      return rows.length > 0 ? rows[0] : null;
     } catch (error) {
       logger.error(`Erro ao buscar usuário por ID: ${error.message}`);
       throw error;
@@ -25,8 +28,11 @@ class Usuario {
    */
   static async buscarPorEmail(email) {
     try {
-      const result = await db.query('SELECT * FROM usuarios WHERE email = ?', [email]);
-      return result.length > 0 ? result[0] : null;
+      const { rows } = await db.query(
+        'SELECT * FROM usuarios WHERE email = $1', 
+        [email]
+      );
+      return rows.length > 0 ? rows[0] : null;
     } catch (error) {
       logger.error(`Erro ao buscar usuário por email: ${error.message}`);
       throw error;
@@ -44,17 +50,12 @@ class Usuario {
       const saltRounds = 10;
       const senhaHash = await bcrypt.hash(usuario.senha, saltRounds);
       
-      const result = await db.query(
-        'INSERT INTO usuarios (nome, email, senha, cargo) VALUES (?, ?, ?, ?)',
+      const { rows } = await db.query(
+        'INSERT INTO usuarios (nome, email, senha, cargo) VALUES ($1, $2, $3, $4) RETURNING id, nome, email, cargo, ativo',
         [usuario.nome, usuario.email, senhaHash, usuario.cargo || 'editor']
       );
       
-      return {
-        id: result.insertId,
-        nome: usuario.nome,
-        email: usuario.email,
-        cargo: usuario.cargo || 'editor'
-      };
+      return rows[0];
     } catch (error) {
       logger.error(`Erro ao criar usuário: ${error.message}`);
       throw error;
@@ -69,45 +70,52 @@ class Usuario {
    */
   static async atualizar(id, usuario) {
     try {
-      let query = 'UPDATE usuarios SET ';
-      const params = [];
+      const updates = [];
+      const values = [];
+      let paramCount = 1;
       
       // Constrói a query de atualização dinamicamente
       if (usuario.nome) {
-        query += 'nome = ?, ';
-        params.push(usuario.nome);
+        updates.push(`nome = $${paramCount++}`);
+        values.push(usuario.nome);
       }
       
       if (usuario.email) {
-        query += 'email = ?, ';
-        params.push(usuario.email);
+        updates.push(`email = $${paramCount++}`);
+        values.push(usuario.email);
       }
       
       if (usuario.senha) {
         const saltRounds = 10;
         const senhaHash = await bcrypt.hash(usuario.senha, saltRounds);
-        query += 'senha = ?, ';
-        params.push(senhaHash);
+        updates.push(`senha = $${paramCount++}`);
+        values.push(senhaHash);
       }
       
       if (usuario.cargo) {
-        query += 'cargo = ?, ';
-        params.push(usuario.cargo);
+        updates.push(`cargo = $${paramCount++}`);
+        values.push(usuario.cargo);
       }
       
       if (usuario.ativo !== undefined) {
-        query += 'ativo = ?, ';
-        params.push(usuario.ativo);
+        updates.push(`ativo = $${paramCount++}`);
+        values.push(usuario.ativo);
       }
       
-      // Remove a vírgula e o espaço no final
-      query = query.slice(0, -2);
+      if (updates.length === 0) {
+        throw new Error('Nenhum campo para atualizar');
+      }
       
-      query += ' WHERE id = ?';
-      params.push(id);
+      values.push(id);
+      const query = `
+        UPDATE usuarios 
+        SET ${updates.join(', ')}, data_atualizacao = NOW() 
+        WHERE id = $${paramCount}
+        RETURNING id, nome, email, cargo, ativo
+      `;
       
-      const result = await db.query(query, params);
-      return result.affectedRows > 0;
+      const { rowCount } = await db.query(query, values);
+      return rowCount > 0;
     } catch (error) {
       logger.error(`Erro ao atualizar usuário: ${error.message}`);
       throw error;
@@ -135,9 +143,10 @@ class Usuario {
    */
   static async listarTodos() {
     try {
-      return await db.query(
-        'SELECT id, nome, email, cargo, ativo, data_criacao, data_atualizacao FROM usuarios'
+      const { rows } = await db.query(
+        'SELECT id, nome, email, cargo, ativo, data_criacao, data_atualizacao FROM usuarios ORDER BY nome'
       );
+      return rows;
     } catch (error) {
       logger.error(`Erro ao listar usuários: ${error.message}`);
       throw error;
@@ -151,8 +160,8 @@ class Usuario {
    */
   static async remover(id) {
     try {
-      const result = await db.query('DELETE FROM usuarios WHERE id = ?', [id]);
-      return result.affectedRows > 0;
+      const { rowCount } = await db.query('DELETE FROM usuarios WHERE id = $1', [id]);
+      return rowCount > 0;
     } catch (error) {
       logger.error(`Erro ao remover usuário: ${error.message}`);
       throw error;

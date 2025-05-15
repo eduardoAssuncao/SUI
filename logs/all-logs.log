@@ -472,3 +472,147 @@
 [31m    at router (/home/andre/Documentos/SUI/node_modules/router/index.js:60:12)[39m
 2025-05-13 22:45:42:4542 [32minfo[39m: [32m::1 - - [14/May/2025:01:45:42 +0000] "GET /api/auth/login HTTP/1.1" 404 960 "-" "PostmanRuntime/7.43.4"[39m
 2025-05-13 22:46:47:4647 [32minfo[39m: [32m::1 - - [14/May/2025:01:46:47 +0000] "POST /api/auth/login HTTP/1.1" 200 358 "-" "PostmanRuntime/7.43.4"[39m
+2025-05-14 22:23:17:2317 [32minfo[39m: [32mServidor rodando na porta 3000[39m
+2025-05-14 22:23:22:2322 [32minfo[39m: [32mServidor rodando na porta 3000[39m
+2025-05-14 22:23:53:2353 [32minfo[39m: [32m::ffff:127.0.0.1 - - [15/May/2025:01:23:53 +0000] "GET / HTTP/1.1" 200 76 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0"[39m
+2025-05-14 22:23:53:2353 [31merror[39m: [31mApiError: Rota não encontrada: /favicon.ico[39m
+[31mStack: ApiError: Rota não encontrada: /favicon.ico[39m
+[31m    at notFoundHandler (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\middleware\errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at trimPrefix (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:342:13)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:297:9[39m
+[31m    at processParams (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:582:12)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:291:5)[39m
+[31m    at urlencodedParser (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\body-parser\lib\types\urlencoded.js:68:7)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at trimPrefix (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:342:13)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:297:9[39m
+2025-05-14 22:23:53:2353 [32minfo[39m: [32m::ffff:127.0.0.1 - - [15/May/2025:01:23:53 +0000] "GET /favicon.ico HTTP/1.1" 404 1550 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0"[39m
+2025-05-14 22:35:22:3522 [31merror[39m: [31mApiError: Rota não encontrada: /api/auth/registro[39m
+[31mStack: ApiError: Rota não encontrada: /api/auth/registro[39m
+[31m    at notFoundHandler (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\middleware\errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at trimPrefix (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:342:13)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:297:9[39m
+[31m    at processParams (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:582:12)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:291:5)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:688:15[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:276:14)[39m
+[31m    at Function.handle (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:186:3)[39m
+[31m    at router (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:60:12)[39m
+2025-05-14 22:35:22:3522 [32minfo[39m: [32m::1 - - [15/May/2025:01:35:22 +0000] "GET /api/auth/registro HTTP/1.1" 404 1516 "-" "PostmanRuntime/7.43.4"[39m
+2025-05-14 22:36:40:3640 [31merror[39m: [31mApiError: Rota não encontrada: /api/auth/registro[39m
+[31mStack: ApiError: Rota não encontrada: /api/auth/registro[39m
+[31m    at notFoundHandler (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\middleware\errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at trimPrefix (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:342:13)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:297:9[39m
+[31m    at processParams (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:582:12)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:291:5)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:688:15[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:276:14)[39m
+[31m    at Function.handle (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:186:3)[39m
+[31m    at router (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:60:12)[39m
+2025-05-14 22:36:40:3640 [32minfo[39m: [32m::1 - - [15/May/2025:01:36:40 +0000] "GET /api/auth/registro HTTP/1.1" 404 1516 "-" "PostmanRuntime/7.43.4"[39m
+2025-05-14 22:36:49:3649 [31merror[39m: [31mApiError: Rota não encontrada: /api/auth/registrar[39m
+[31mStack: ApiError: Rota não encontrada: /api/auth/registrar[39m
+[31m    at notFoundHandler (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\middleware\errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at trimPrefix (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:342:13)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:297:9[39m
+[31m    at processParams (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:582:12)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:291:5)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:688:15[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:276:14)[39m
+[31m    at Function.handle (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:186:3)[39m
+[31m    at router (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:60:12)[39m
+2025-05-14 22:36:49:3649 [32minfo[39m: [32m::1 - - [15/May/2025:01:36:49 +0000] "GET /api/auth/registrar HTTP/1.1" 404 1518 "-" "PostmanRuntime/7.43.4"[39m
+2025-05-14 22:37:11:3711 [31merror[39m: [31mErro ao executar query:[39m
+2025-05-14 22:37:11:3711 [31merror[39m: [31mErro ao buscar usuário por email: self-signed certificate in certificate chain[39m
+2025-05-14 22:37:11:3711 [31merror[39m: [31mError: self-signed certificate in certificate chain[39m
+[31mStack: Error: self-signed certificate in certificate chain[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\pg-pool\index.js:45:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at async Object.query (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\config\dataBaseConfig.js:31:17)[39m
+[31m    at async Usuario.buscarPorEmail (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\models\usuario.js:31:24)[39m
+[31m    at async registrar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\controllers\authController.js:125:32)[39m
+2025-05-14 22:37:11:3711 [32minfo[39m: [32m::1 - - [15/May/2025:01:37:11 +0000] "POST /api/auth/registrar HTTP/1.1" 500 793 "-" "PostmanRuntime/7.43.4"[39m
+2025-05-14 22:37:49:3749 [31merror[39m: [31mErro ao executar query:[39m
+2025-05-14 22:37:49:3749 [31merror[39m: [31mErro ao buscar usuário por email: self-signed certificate in certificate chain[39m
+2025-05-14 22:37:49:3749 [31merror[39m: [31mError: self-signed certificate in certificate chain[39m
+[31mStack: Error: self-signed certificate in certificate chain[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\pg-pool\index.js:45:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at async Object.query (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\config\dataBaseConfig.js:31:17)[39m
+[31m    at async Usuario.buscarPorEmail (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\models\usuario.js:31:24)[39m
+[31m    at async registrar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\controllers\authController.js:125:32)[39m
+2025-05-14 22:37:49:3749 [32minfo[39m: [32m::1 - - [15/May/2025:01:37:49 +0000] "POST /api/auth/registrar HTTP/1.1" 500 793 "-" "PostmanRuntime/7.43.4"[39m
+2025-05-14 22:38:56:3856 [31merror[39m: [31mApiError: Rota não encontrada: /api/registrar[39m
+[31mStack: ApiError: Rota não encontrada: /api/registrar[39m
+[31m    at notFoundHandler (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\middleware\errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at trimPrefix (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:342:13)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:297:9[39m
+[31m    at processParams (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:582:12)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:291:5)[39m
+[31m    at urlencodedParser (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\body-parser\lib\types\urlencoded.js:57:7)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at trimPrefix (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:342:13)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:297:9[39m
+2025-05-14 22:38:56:3856 [32minfo[39m: [32m::1 - - [15/May/2025:01:38:56 +0000] "POST /api/registrar HTTP/1.1" 404 1554 "-" "PostmanRuntime/7.43.4"[39m
+2025-05-14 22:39:13:3913 [31merror[39m: [31mApiError: Token de autenticação não fornecido[39m
+[31mStack: ApiError: Token de autenticação não fornecido[39m
+[31m    at authMiddleware (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\middleware\authMiddleware.js:12:13)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\route.js:157:13)[39m
+[31m    at Route.dispatch (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\route.js:117:3)[39m
+[31m    at handle (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:435:11)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:295:15[39m
+[31m    at processParams (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:582:12)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:291:5)[39m
+[31m    at Function.handle (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:186:3)[39m
+2025-05-14 22:39:13:3913 [32minfo[39m: [32m::1 - - [15/May/2025:01:39:13 +0000] "GET /api/auth/usuarios HTTP/1.1" 401 1555 "-" "PostmanRuntime/7.43.4"[39m
+2025-05-14 22:39:35:3935 [31merror[39m: [31mErro ao executar query:[39m
+2025-05-14 22:39:35:3935 [31merror[39m: [31mErro ao buscar usuário por email: self-signed certificate in certificate chain[39m
+2025-05-14 22:39:35:3935 [31merror[39m: [31mError: self-signed certificate in certificate chain[39m
+[31mStack: Error: self-signed certificate in certificate chain[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\pg-pool\index.js:45:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at async Object.query (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\config\dataBaseConfig.js:31:17)[39m
+[31m    at async Usuario.buscarPorEmail (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\models\usuario.js:31:24)[39m
+[31m    at async registrar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\controllers\authController.js:125:32)[39m
+2025-05-14 22:39:35:3935 [32minfo[39m: [32m::1 - - [15/May/2025:01:39:35 +0000] "POST /api/auth/registrar HTTP/1.1" 500 793 "-" "PostmanRuntime/7.43.4"[39m
+2025-05-14 22:40:00:400 [32minfo[39m: [32mServidor rodando na porta 3000[39m
+2025-05-14 22:40:28:4028 [32minfo[39m: [32mServidor rodando na porta 3000[39m
+2025-05-14 22:40:53:4053 [37mdebug[39m: [37mQuery executada[39m
+2025-05-14 22:40:53:4053 [31merror[39m: [31mErro ao criar usuário: data must be a string or Buffer and salt must either be a salt string or a number of rounds[39m
+2025-05-14 22:40:53:4053 [31merror[39m: [31mError: data must be a string or Buffer and salt must either be a salt string or a number of rounds[39m
+[31mStack: Error: data must be a string or Buffer and salt must either be a salt string or a number of rounds[39m
+[31m    at Object.hash (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\bcrypt\bcrypt.js:140:17)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\bcrypt\promises.js:26:12[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at Object.promise (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\bcrypt\promises.js:17:12)[39m
+[31m    at Object.hash (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\bcrypt\bcrypt.js:129:25)[39m
+[31m    at Usuario.criar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\models\usuario.js:51:38)[39m
+[31m    at registrar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\controllers\authController.js:132:41)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+2025-05-14 22:40:53:4053 [32minfo[39m: [32m::1 - - [15/May/2025:01:40:53 +0000] "POST /api/auth/registrar HTTP/1.1" 500 1188 "-" "PostmanRuntime/7.43.4"[39m
+2025-05-14 22:42:03:423 [37mdebug[39m: [37mQuery executada[39m
+2025-05-14 22:42:03:423 [37mdebug[39m: [37mQuery executada[39m
+2025-05-14 22:42:03:423 [32minfo[39m: [32m::1 - - [15/May/2025:01:42:03 +0000] "POST /api/auth/registrar HTTP/1.1" 201 103 "-" "PostmanRuntime/7.43.4"[39m
+2025-05-14 22:43:23:4323 [31merror[39m: [31mApiError: Rota não encontrada: /api/auth/login[39m
+[31mStack: ApiError: Rota não encontrada: /api/auth/login[39m
+[31m    at notFoundHandler (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\middleware\errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at trimPrefix (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:342:13)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:297:9[39m
+[31m    at processParams (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:582:12)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:291:5)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:688:15[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:276:14)[39m
+[31m    at Function.handle (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:186:3)[39m
+[31m    at router (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:60:12)[39m
+2025-05-14 22:43:23:4323 [32minfo[39m: [32m::1 - - [15/May/2025:01:43:23 +0000] "GET /api/auth/login HTTP/1.1" 404 1510 "-" "PostmanRuntime/7.43.4"[39m
+2025-05-14 22:43:40:4340 [37mdebug[39m: [37mQuery executada[39m
+2025-05-14 22:43:40:4340 [32minfo[39m: [32m::1 - - [15/May/2025:01:43:40 +0000] "POST /api/auth/login HTTP/1.1" 200 342 "-" "PostmanRuntime/7.43.4"[39m
