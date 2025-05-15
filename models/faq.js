@@ -9,8 +9,8 @@ class Faq {
    */
   static async buscarPorId(id) {
     try {
-      const result = await db.query('SELECT * FROM faq WHERE id = ?', [id]);
-      return result.length > 0 ? result[0] : null;
+      const result = await db.query('SELECT * FROM faqs WHERE id = $1', [id]);
+      return result.rows.length > 0 ? result.rows[0] : null;
     } catch (error) {
       logger.error(`Erro ao buscar pergunta frequente por ID: ${error.message}`);
       throw error;
@@ -24,10 +24,11 @@ class Faq {
    */
   static async listarPorServico(servicoId) {
     try {
-      return await db.query(
-        'SELECT * FROM faq WHERE servico_id = ? ORDER BY ordem, id',
+      const result = await db.query(
+        'SELECT * FROM faqs WHERE servico_id = $1 ORDER BY ordem, id',
         [servicoId]
       );
+      return result.rows;
     } catch (error) {
       logger.error(`Erro ao listar perguntas frequentes: ${error.message}`);
       throw error;
@@ -43,18 +44,18 @@ class Faq {
     try {
       // Busca a maior ordem para o serviço
       const ordemResult = await db.query(
-        'SELECT MAX(ordem) as max_ordem FROM faq WHERE servico_id = ?',
+        'SELECT MAX(ordem) as max_ordem FROM faqs WHERE servico_id = $1',
         [faq.servico_id]
       );
       
-      const ordem = ordemResult[0].max_ordem !== null ? ordemResult[0].max_ordem + 1 : 0;
+      const ordem = ordemResult.rows[0].max_ordem !== null ? ordemResult.rows[0].max_ordem + 1 : 0;
       
       const result = await db.query(
-        'INSERT INTO faq (servico_id, pergunta, resposta, ordem) VALUES (?, ?, ?, ?)',
-        [faq.servico_id, faq.pergunta, faq.resposta, ordem]
+        'INSERT INTO faqs (servico_id, pergunta, resposta, ordem, ativo) VALUES ($1, $2, $3, $4, $5) RETURNING *',
+        [faq.servico_id, faq.pergunta, faq.resposta, ordem, faq.ativo]
       );
       
-      return { id: result.insertId, ...faq, ordem };
+      return { ...result.rows[0] };
     } catch (error) {
       logger.error(`Erro ao criar pergunta frequente: ${error.message}`);
       throw error;
@@ -69,38 +70,47 @@ class Faq {
    */
   static async atualizar(id, faq) {
     try {
-      let query = 'UPDATE faq SET ';
+      const setClauses = [];
       const params = [];
+      let paramCount = 1;
       
       // Constrói a query de atualização dinamicamente
       if (faq.servico_id !== undefined) {
-        query += 'servico_id = ?, ';
+        setClauses.push(`servico_id = $${paramCount++}`);
         params.push(faq.servico_id);
       }
       
       if (faq.pergunta !== undefined) {
-        query += 'pergunta = ?, ';
+        setClauses.push(`pergunta = $${paramCount++}`);
         params.push(faq.pergunta);
       }
       
       if (faq.resposta !== undefined) {
-        query += 'resposta = ?, ';
+        setClauses.push(`resposta = $${paramCount++}`);
         params.push(faq.resposta);
       }
       
       if (faq.ordem !== undefined) {
-        query += 'ordem = ?, ';
+        setClauses.push(`ordem = $${paramCount++}`);
         params.push(faq.ordem);
       }
       
-      // Remove a vírgula e o espaço no final
-      query = query.slice(0, -2);
+      if (setClauses.length === 0) {
+        throw new Error('Nenhum campo para atualizar');
+      }
       
-      query += ' WHERE id = ?';
+      // Adiciona o ID como último parâmetro
       params.push(id);
+      const whereClause = `id = $${paramCount}`;
+      
+      const query = `
+        UPDATE faq 
+        SET ${setClauses.join(', ')}
+        WHERE ${whereClause}
+      `;
       
       const result = await db.query(query, params);
-      return result.affectedRows > 0;
+      return result.rowCount > 0;
     } catch (error) {
       logger.error(`Erro ao atualizar pergunta frequente: ${error.message}`);
       throw error;
@@ -114,8 +124,8 @@ class Faq {
    */
   static async remover(id) {
     try {
-      const result = await db.query('DELETE FROM faq WHERE id = ?', [id]);
-      return result.affectedRows > 0;
+      const result = await db.query('DELETE FROM faqs WHERE id = $1', [id]);
+      return result.rowCount > 0;
     } catch (error) {
       logger.error(`Erro ao remover pergunta frequente: ${error.message}`);
       throw error;
@@ -129,7 +139,7 @@ class Faq {
    */
   static async removerPorServico(servicoId) {
     try {
-      const result = await db.query('DELETE FROM faq WHERE servico_id = ?', [servicoId]);
+      await db.query('DELETE FROM faqs WHERE servico_id = $1', [servicoId]);
       return true;
     } catch (error) {
       logger.error(`Erro ao remover perguntas frequentes por serviço: ${error.message}`);
@@ -144,30 +154,25 @@ class Faq {
    * @returns {Promise<boolean>} - true se reordenadas com sucesso
    */
   static async reordenar(servicoId, ordenacao) {
+    const client = await db.getClient();
+    
     try {
-      const conn = await db.getConnection();
+      await client.query('BEGIN');
       
-      try {
-        await conn.beginTransaction();
-        
-        for (let i = 0; i < ordenacao.length; i++) {
-          await conn.query(
-            'UPDATE faq SET ordem = ? WHERE id = ? AND servico_id = ?',
-            [i, ordenacao[i], servicoId]
-          );
-        }
-        
-        await conn.commit();
-        return true;
-      } catch (error) {
-        await conn.rollback();
-        throw error;
-      } finally {
-        conn.release();
+      for (let i = 0; i < ordenacao.length; i++) {
+        await client.query(
+          'UPDATE faqs SET ordem = $1 WHERE id = $2 AND servico_id = $3',
+          [i, ordenacao[i], servicoId]
+        );
       }
+      
+      await client.query('COMMIT');
+      return true;
     } catch (error) {
-      logger.error(`Erro ao reordenar perguntas frequentes: ${error.message}`);
+      await client.query('ROLLBACK');
       throw error;
+    } finally {
+      client.release();
     }
   }
 }

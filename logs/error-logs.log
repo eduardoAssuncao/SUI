@@ -522,3 +522,274 @@
 [31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:276:14)[39m
 [31m    at Function.handle (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:186:3)[39m
 [31m    at router (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:60:12)[39m
+2025-05-14 23:23:30:2330 [31merror[39m: [31mApiError: Permissão insuficiente para acessar este recurso[39m
+[31mStack: ApiError: Permissão insuficiente para acessar este recurso[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\middleware\authMiddleware.js:49:15[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\route.js:157:13)[39m
+[31m    at authMiddleware (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\middleware\authMiddleware.js:24:5)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\route.js:157:13)[39m
+[31m    at Route.dispatch (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\route.js:117:3)[39m
+[31m    at handle (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:435:11)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:295:15[39m
+2025-05-14 23:24:00:240 [31merror[39m: [31mApiError: Credenciais inválidas[39m
+[31mStack: ApiError: Credenciais inválidas[39m
+[31m    at login (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\controllers\authController.js:31:15)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+2025-05-14 23:24:09:249 [31merror[39m: [31mApiError: Credenciais inválidas[39m
+[31mStack: ApiError: Credenciais inválidas[39m
+[31m    at login (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\controllers\authController.js:31:15)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+2025-05-14 23:24:14:2414 [31merror[39m: [31mApiError: Credenciais inválidas[39m
+[31mStack: ApiError: Credenciais inválidas[39m
+[31m    at login (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\controllers\authController.js:31:15)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+2025-05-14 23:25:42:2542 [31merror[39m: [31mApiError: Token de autenticação não fornecido[39m
+[31mStack: ApiError: Token de autenticação não fornecido[39m
+[31m    at authMiddleware (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\middleware\authMiddleware.js:12:13)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\route.js:157:13)[39m
+[31m    at Route.dispatch (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\route.js:117:3)[39m
+[31m    at handle (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:435:11)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:295:15[39m
+[31m    at processParams (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:582:12)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:291:5)[39m
+[31m    at Function.handle (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:186:3)[39m
+2025-05-14 23:27:25:2725 [31merror[39m: [31mErro ao executar query:[39m
+2025-05-14 23:27:25:2725 [31merror[39m: [31mErro ao criar categoria: syntax error at or near ","[39m
+2025-05-14 23:27:25:2725 [31merror[39m: [31merror: syntax error at or near ","[39m
+[31mStack: error: syntax error at or near ","[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\pg-pool\index.js:45:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at async Object.query (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\config\dataBaseConfig.js:59:17)[39m
+[31m    at async Categoria.criar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\models\categoria.js:47:22)[39m
+[31m    at async C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\routes\categoriasRoute.js:43:25[39m
+2025-05-14 23:28:48:2848 [31merror[39m: [31mErro ao executar query:[39m
+2025-05-14 23:28:48:2848 [31merror[39m: [31mErro ao criar categoria: syntax error at or near ","[39m
+2025-05-14 23:28:48:2848 [31merror[39m: [31merror: syntax error at or near ","[39m
+[31mStack: error: syntax error at or near ","[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\pg-pool\index.js:45:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at async Object.query (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\config\dataBaseConfig.js:59:17)[39m
+[31m    at async Categoria.criar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\models\categoria.js:47:22)[39m
+[31m    at async C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\routes\categoriasRoute.js:43:25[39m
+2025-05-14 23:28:56:2856 [31merror[39m: [31mErro ao executar query:[39m
+2025-05-14 23:28:56:2856 [31merror[39m: [31mErro ao criar categoria: syntax error at or near ","[39m
+2025-05-14 23:28:56:2856 [31merror[39m: [31merror: syntax error at or near ","[39m
+[31mStack: error: syntax error at or near ","[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\pg-pool\index.js:45:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at async Object.query (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\config\dataBaseConfig.js:59:17)[39m
+[31m    at async Categoria.criar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\models\categoria.js:47:22)[39m
+[31m    at async C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\routes\categoriasRoute.js:43:25[39m
+2025-05-14 23:29:26:2926 [31merror[39m: [31mErro ao executar query:[39m
+2025-05-14 23:29:26:2926 [31merror[39m: [31mErro ao criar categoria: syntax error at or near ","[39m
+2025-05-14 23:29:26:2926 [31merror[39m: [31merror: syntax error at or near ","[39m
+[31mStack: error: syntax error at or near ","[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\pg-pool\index.js:45:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at async Object.query (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\config\dataBaseConfig.js:59:17)[39m
+[31m    at async Categoria.criar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\models\categoria.js:47:22)[39m
+[31m    at async C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\routes\categoriasRoute.js:43:25[39m
+2025-05-14 23:30:09:309 [31merror[39m: [31mErro ao executar query:[39m
+2025-05-14 23:30:09:309 [31merror[39m: [31mErro ao criar categoria: syntax error at or near ","[39m
+2025-05-14 23:30:09:309 [31merror[39m: [31merror: syntax error at or near ","[39m
+[31mStack: error: syntax error at or near ","[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\pg-pool\index.js:45:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at async Object.query (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\config\dataBaseConfig.js:59:17)[39m
+[31m    at async Categoria.criar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\models\categoria.js:47:22)[39m
+[31m    at async C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\routes\categoriasRoute.js:43:25[39m
+2025-05-14 23:30:35:3035 [31merror[39m: [31mErro ao executar query:[39m
+2025-05-14 23:30:35:3035 [31merror[39m: [31mErro ao criar categoria: syntax error at or near ","[39m
+2025-05-14 23:30:35:3035 [31merror[39m: [31merror: syntax error at or near ","[39m
+[31mStack: error: syntax error at or near ","[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\pg-pool\index.js:45:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at async Object.query (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\config\dataBaseConfig.js:59:17)[39m
+[31m    at async Categoria.criar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\models\categoria.js:47:22)[39m
+[31m    at async C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\routes\categoriasRoute.js:43:25[39m
+2025-05-14 23:33:41:3341 [31merror[39m: [31mTypeError: require(...).getConnection is not a function[39m
+[31mStack: TypeError: require(...).getConnection is not a function[39m
+[31m    at criar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\controllers\servicoController.js:146:62)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\route.js:157:13)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\middleware\authMiddleware.js:52:7[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\route.js:157:13)[39m
+[31m    at authMiddleware (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\middleware\authMiddleware.js:24:5)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\route.js:157:13)[39m
+[31m    at Route.dispatch (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\route.js:117:3)[39m
+2025-05-14 23:43:27:4327 [31merror[39m: [31mErro ao executar query: column "publico_alvo" of relation "servicos" does not exist[39m
+2025-05-14 23:43:27:4327 [31merror[39m: [31mErro ao criar serviço: column "publico_alvo" of relation "servicos" does not exist[39m
+2025-05-14 23:43:27:4327 [31merror[39m: [31merror: column "publico_alvo" of relation "servicos" does not exist[39m
+[31mStack: error: column "publico_alvo" of relation "servicos" does not exist[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\pg-pool\index.js:45:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at async Object.query (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\config\dataBaseConfig.js:58:17)[39m
+[31m    at async Servico.criar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\models\servico.js:158:22)[39m
+[31m    at async criar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\controllers\servicoController.js:153:25)[39m
+2025-05-14 23:44:54:4454 [31merror[39m: [31mErro ao executar query: column "publico_alvo" of relation "servicos" does not exist[39m
+2025-05-14 23:44:54:4454 [31merror[39m: [31mErro ao criar serviço: column "publico_alvo" of relation "servicos" does not exist[39m
+2025-05-14 23:44:54:4454 [31merror[39m: [31merror: column "publico_alvo" of relation "servicos" does not exist[39m
+[31mStack: error: column "publico_alvo" of relation "servicos" does not exist[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\pg-pool\index.js:45:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at async Object.query (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\config\dataBaseConfig.js:58:17)[39m
+[31m    at async Servico.criar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\models\servico.js:158:22)[39m
+[31m    at async criar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\controllers\servicoController.js:153:25)[39m
+2025-05-14 23:47:18:4718 [31merror[39m: [31mErro ao executar query: column "link_agendamento" of relation "servicos" does not exist[39m
+2025-05-14 23:47:18:4718 [31merror[39m: [31mErro ao criar serviço: column "link_agendamento" of relation "servicos" does not exist[39m
+2025-05-14 23:47:18:4718 [31merror[39m: [31merror: column "link_agendamento" of relation "servicos" does not exist[39m
+[31mStack: error: column "link_agendamento" of relation "servicos" does not exist[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\pg-pool\index.js:45:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at async Object.query (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\config\dataBaseConfig.js:58:17)[39m
+[31m    at async Servico.criar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\models\servico.js:158:22)[39m
+[31m    at async criar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\controllers\servicoController.js:153:25)[39m
+2025-05-14 23:48:19:4819 [31merror[39m: [31mErro ao executar query: column "servico_id" does not exist[39m
+2025-05-14 23:48:19:4819 [31merror[39m: [31mErro ao listar locais de atendimento: column "servico_id" does not exist[39m
+2025-05-14 23:48:19:4819 [31merror[39m: [31mErro ao executar query: relation "faq" does not exist[39m
+2025-05-14 23:48:19:4819 [31merror[39m: [31mErro ao listar perguntas frequentes: relation "faq" does not exist[39m
+2025-05-14 23:48:19:4819 [31merror[39m: [31merror: column "servico_id" does not exist[39m
+[31mStack: error: column "servico_id" does not exist[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\pg-pool\index.js:45:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at async Object.query (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\config\dataBaseConfig.js:58:17)[39m
+[31m    at async LocalAtendimento.listarPorServico (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\models\localAtendimento.js:27:22)[39m
+[31m    at async Promise.all (index 1)[39m
+[31m    at async ServicoController.buscarServicoPorId (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\controllers\servicoController.js:389:42)[39m
+[31m    at async criar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\controllers\servicoController.js:188:33)[39m
+2025-05-14 23:49:15:4915 [31merror[39m: [31mErro ao executar query: column "servico_id" does not exist[39m
+2025-05-14 23:49:15:4915 [31merror[39m: [31mErro ao listar locais de atendimento: column "servico_id" does not exist[39m
+2025-05-14 23:49:15:4915 [31merror[39m: [31merror: column "servico_id" does not exist[39m
+[31mStack: error: column "servico_id" does not exist[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\pg-pool\index.js:45:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at async Object.query (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\config\dataBaseConfig.js:58:17)[39m
+[31m    at async LocalAtendimento.listarPorServico (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\models\localAtendimento.js:27:22)[39m
+[31m    at async Promise.all (index 1)[39m
+[31m    at async ServicoController.buscarServicoPorId (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\controllers\servicoController.js:389:42)[39m
+[31m    at async criar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\controllers\servicoController.js:188:33)[39m
+2025-05-14 23:49:15:4915 [31merror[39m: [31mErro ao executar query: relation "faq" does not exist[39m
+2025-05-14 23:49:15:4915 [31merror[39m: [31mErro ao listar perguntas frequentes: relation "faq" does not exist[39m
+2025-05-14 23:52:28:5228 [31merror[39m: [31mApiError: Campos obrigatórios não fornecidos[39m
+[31mStack: ApiError: Campos obrigatórios não fornecidos[39m
+[31m    at criar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\controllers\servicoController.js:143:15)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\route.js:157:13)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\middleware\authMiddleware.js:52:7[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\route.js:157:13)[39m
+[31m    at authMiddleware (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\middleware\authMiddleware.js:24:5)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\route.js:157:13)[39m
+[31m    at Route.dispatch (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\route.js:117:3)[39m
+2025-05-14 23:52:51:5251 [31merror[39m: [31mErro ao criar local de atendimento: column "cep" of relation "locais_atendimento" does not exist[39m
+2025-05-14 23:52:51:5251 [31merror[39m: [31merror: column "cep" of relation "locais_atendimento" does not exist[39m
+[31mStack: error: column "cep" of relation "locais_atendimento" does not exist[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\pg\lib\client.js:545:17[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at async LocalAtendimento.criar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\models\localAtendimento.js:70:22)[39m
+[31m    at async C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\routes\locaisRoute.js:28:21[39m
+2025-05-14 23:56:51:5651 [31merror[39m: [31mErro ao executar query: null value in column "ativo" of relation "faqs" violates not-null constraint[39m
+2025-05-14 23:56:51:5651 [31merror[39m: [31mErro ao criar pergunta frequente: null value in column "ativo" of relation "faqs" violates not-null constraint[39m
+2025-05-14 23:56:51:5651 [31merror[39m: [31merror: null value in column "ativo" of relation "faqs" violates not-null constraint[39m
+[31mStack: error: null value in column "ativo" of relation "faqs" violates not-null constraint[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\pg-pool\index.js:45:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+[31m    at async Object.query (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\config\dataBaseConfig.js:58:17)[39m
+[31m    at async Faq.criar (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\models\faq.js:53:22)[39m
+[31m    at async C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\routes\faqRoute.js:28:19[39m
+2025-05-14 23:59:00:590 [31merror[39m: [31mApiError: Rota não encontrada: /api/faq[39m
+[31mStack: ApiError: Rota não encontrada: /api/faq[39m
+[31m    at notFoundHandler (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\middleware\errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at trimPrefix (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:342:13)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:297:9[39m
+[31m    at processParams (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:582:12)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:291:5)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:688:15[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:276:14)[39m
+[31m    at Function.handle (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:186:3)[39m
+[31m    at router (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:60:12)[39m
+2025-05-15 00:00:37:037 [31merror[39m: [31mTypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31mStack: TypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31m    at listarTodos (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\controllers\servicoController.js:46:60)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+2025-05-15 00:00:41:041 [31merror[39m: [31mApiError: Rota não encontrada: /api/[39m
+[31mStack: ApiError: Rota não encontrada: /api/[39m
+[31m    at notFoundHandler (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\middleware\errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at trimPrefix (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:342:13)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:297:9[39m
+[31m    at processParams (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:582:12)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:291:5)[39m
+[31m    at urlencodedParser (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\body-parser\lib\types\urlencoded.js:57:7)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at trimPrefix (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:342:13)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:297:9[39m
+2025-05-15 00:01:06:16 [31merror[39m: [31mApiError: Rota não encontrada: /api/1[39m
+[31mStack: ApiError: Rota não encontrada: /api/1[39m
+[31m    at notFoundHandler (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\middleware\errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at trimPrefix (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:342:13)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:297:9[39m
+[31m    at processParams (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:582:12)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:291:5)[39m
+[31m    at urlencodedParser (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\body-parser\lib\types\urlencoded.js:57:7)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at trimPrefix (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:342:13)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:297:9[39m
+2025-05-15 00:01:14:114 [31merror[39m: [31mApiError: Rota não encontrada: /api/servico[39m
+[31mStack: ApiError: Rota não encontrada: /api/servico[39m
+[31m    at notFoundHandler (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\middleware\errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at trimPrefix (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:342:13)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:297:9[39m
+[31m    at processParams (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:582:12)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:291:5)[39m
+[31m    at urlencodedParser (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\body-parser\lib\types\urlencoded.js:57:7)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at trimPrefix (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:342:13)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:297:9[39m
+2025-05-15 00:01:16:116 [31merror[39m: [31mApiError: Rota não encontrada: /api/servico/[39m
+[31mStack: ApiError: Rota não encontrada: /api/servico/[39m
+[31m    at notFoundHandler (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\middleware\errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at trimPrefix (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:342:13)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:297:9[39m
+[31m    at processParams (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:582:12)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:291:5)[39m
+[31m    at urlencodedParser (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\body-parser\lib\types\urlencoded.js:57:7)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at trimPrefix (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:342:13)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:297:9[39m
+2025-05-15 00:01:18:118 [31merror[39m: [31mApiError: Rota não encontrada: /api/servico/1[39m
+[31mStack: ApiError: Rota não encontrada: /api/servico/1[39m
+[31m    at notFoundHandler (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\middleware\errorHandler.js:38:17)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at trimPrefix (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:342:13)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:297:9[39m
+[31m    at processParams (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:582:12)[39m
+[31m    at next (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:291:5)[39m
+[31m    at urlencodedParser (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\body-parser\lib\types\urlencoded.js:57:7)[39m
+[31m    at Layer.handleRequest (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\lib\layer.js:152:17)[39m
+[31m    at trimPrefix (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:342:13)[39m
+[31m    at C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\node_modules\router\index.js:297:9[39m
+2025-05-15 00:01:24:124 [31merror[39m: [31mTypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31mStack: TypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31m    at listarTodos (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\controllers\servicoController.js:46:60)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+2025-05-15 00:01:28:128 [31merror[39m: [31mTypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31mStack: TypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31m    at listarTodos (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\controllers\servicoController.js:46:60)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+2025-05-15 00:01:39:139 [31merror[39m: [31mTypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31mStack: TypeError: Cannot mix BigInt and other types, use explicit conversions[39m
+[31m    at listarTodos (C:\Users\eduar\Documents\Workspace\Sistema Unificado de Informação\SUI\controllers\servicoController.js:46:60)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m

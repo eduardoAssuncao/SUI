@@ -43,13 +43,15 @@ class ServicoController {
       ]);
       
       // Calcula informações de paginação
-      const totalPaginas = (total + BigInt(filtros.limite) - 1n) / BigInt(filtros.limite);
+      const totalBigInt = BigInt(total);
+      const limiteBigInt = BigInt(filtros.limite);
+      const totalPaginas = (totalBigInt + limiteBigInt - 1n) / limiteBigInt;
       
       res.json({
         success: true,
         data: servicos,
         meta: {
-          total: Number(total),
+          total: Number(totalBigInt),
           pagina: filtros.pagina,
           limite: filtros.limite,
           total_paginas: Number(totalPaginas)
@@ -143,10 +145,11 @@ class ServicoController {
         throw new ApiError('Campos obrigatórios não fornecidos', 400);
       }
       
-      const conn = await require('../config/dataBaseConfig').getConnection();
+      const db = require('../config/dataBaseConfig');
+      const client = await db.getClient();
       
       try {
-        await conn.beginTransaction();
+        await client.query('BEGIN');
         
         // Cria o serviço
         const servico = await Servico.criar({
@@ -181,7 +184,7 @@ class ServicoController {
           }
         }
         
-        await conn.commit();
+        await client.query('COMMIT');
         
         // Busca o serviço completo para retornar
         const servicoCompleto = await ServicoController.buscarServicoPorId(servico.id);
@@ -192,10 +195,10 @@ class ServicoController {
           data: servicoCompleto
         });
       } catch (error) {
-        await conn.rollback();
+        await client.query('ROLLBACK');
         throw error;
       } finally {
-        conn.release();
+        client.release();
       }
     } catch (error) {
       next(error);
@@ -232,10 +235,11 @@ class ServicoController {
         throw new ApiError('Serviço não encontrado', 404);
       }
       
-      const conn = await require('../config/dataBaseConfig').getConnection();
+      const db = require('../config/dataBaseConfig');
+      const client = await db.getClient();
       
       try {
-        await conn.beginTransaction();
+        await client.query('BEGIN');
         
         // Atualiza o serviço
         await Servico.atualizar(id, {
@@ -278,7 +282,7 @@ class ServicoController {
           }
         }
         
-        await conn.commit();
+        await client.query('COMMIT');
         
         // Busca o serviço completo para retornar
         const servicoAtualizado = await ServicoController.buscarServicoPorId(id);
@@ -289,10 +293,10 @@ class ServicoController {
           data: servicoAtualizado
         });
       } catch (error) {
-        await conn.rollback();
+        await client.query('ROLLBACK');
         throw error;
       } finally {
-        conn.release();
+        client.release();
       }
     } catch (error) {
       next(error);
@@ -316,10 +320,11 @@ class ServicoController {
         throw new ApiError('Serviço não encontrado', 404);
       }
       
-      const conn = await require('../config/dataBaseConfig').getConnection();
+      const db = require('../config/dataBaseConfig');
+      const client = await db.getClient();
       
       try {
-        await conn.beginTransaction();
+        await client.query('BEGIN');
         
         // Remove os locais de atendimento e perguntas frequentes
         await Promise.all([
@@ -330,17 +335,17 @@ class ServicoController {
         // Remove o serviço
         await Servico.remover(id);
         
-        await conn.commit();
+        await client.query('COMMIT');
         
         res.json({
           success: true,
           message: 'Serviço removido com sucesso'
         });
       } catch (error) {
-        await conn.rollback();
+        await client.query('ROLLBACK');
         throw error;
       } finally {
-        conn.release();
+        client.release();
       }
     } catch (error) {
       next(error);

@@ -9,8 +9,12 @@ class Categoria {
    */
   static async buscarPorId(id) {
     try {
-      const result = await db.query('SELECT * FROM categorias WHERE id = ?', [id]);
-      return result.length > 0 ? result[0] : null;
+      const query = {
+        text: 'SELECT * FROM categorias WHERE id = $1',
+        values: [id]
+      };
+      const result = await db.query(query);
+      return result.rows.length > 0 ? result.rows[0] : null;
     } catch (error) {
       logger.error(`Erro ao buscar categoria por ID: ${error.message}`);
       throw error;
@@ -23,14 +27,17 @@ class Categoria {
    */
   static async listarTodas() {
     try {
-      const query = `
-        SELECT c.*, COUNT(s.id) as total_servicos
-        FROM categorias c
-        LEFT JOIN servicos s ON c.id = s.categoria_id AND s.ativo = true
-        GROUP BY c.id
-        ORDER BY c.nome
-      `;
-      return await db.query(query);
+      const query = {
+        text: `
+          SELECT c.*, COUNT(s.id) as total_servicos
+          FROM categorias c
+          LEFT JOIN servicos s ON c.id = s.categoria_id AND s.ativo = true
+          GROUP BY c.id
+          ORDER BY c.nome
+        `
+      };
+      const result = await db.query(query);
+      return result.rows;
     } catch (error) {
       logger.error(`Erro ao listar categorias: ${error.message}`);
       throw error;
@@ -44,12 +51,13 @@ class Categoria {
    */
   static async criar(categoria) {
     try {
-      const result = await db.query(
-        'INSERT INTO categorias (nome, descricao, icone) VALUES (?, ?, ?)',
-        [categoria.nome, categoria.descricao || null, categoria.icone || null]
-      );
+      const query = {
+        text: 'INSERT INTO categorias (nome, descricao, icone) VALUES ($1, $2, $3) RETURNING *',
+        values: [categoria.nome, categoria.descricao || null, categoria.icone || null]
+      };
       
-      return { id: result.insertId, ...categoria };
+      const result = await db.query(query);
+      return result.rows[0];
     } catch (error) {
       logger.error(`Erro ao criar categoria: ${error.message}`);
       throw error;
@@ -64,33 +72,37 @@ class Categoria {
    */
   static async atualizar(id, categoria) {
     try {
-      let query = 'UPDATE categorias SET ';
-      const params = [];
-      
-      // Constrói a query de atualização dinamicamente
+      const updates = [];
+      const values = [];
+      let paramIndex = 1;
+
       if (categoria.nome !== undefined) {
-        query += 'nome = ?, ';
-        params.push(categoria.nome);
+        updates.push(`nome = $${paramIndex++}`);
+        values.push(categoria.nome);
       }
       
       if (categoria.descricao !== undefined) {
-        query += 'descricao = ?, ';
-        params.push(categoria.descricao);
+        updates.push(`descricao = $${paramIndex++}`);
+        values.push(categoria.descricao);
       }
       
       if (categoria.icone !== undefined) {
-        query += 'icone = ?, ';
-        params.push(categoria.icone);
+        updates.push(`icone = $${paramIndex++}`);
+        values.push(categoria.icone);
       }
       
-      // Remove a vírgula e o espaço no final
-      query = query.slice(0, -2);
+      if (updates.length === 0) {
+        throw new Error('Nenhum campo para atualizar');
+      }
       
-      query += ' WHERE id = ?';
-      params.push(id);
+      values.push(id);
+      const query = {
+        text: `UPDATE categorias SET ${updates.join(', ')} WHERE id = $${paramIndex} RETURNING *`,
+        values: values
+      };
       
-      const result = await db.query(query, params);
-      return result.affectedRows > 0;
+      const result = await db.query(query);
+      return result.rows.length > 0;
     } catch (error) {
       logger.error(`Erro ao atualizar categoria: ${error.message}`);
       throw error;
@@ -105,14 +117,22 @@ class Categoria {
   static async remover(id) {
     try {
       // Verifica se existem serviços associados a esta categoria
-      const servicos = await db.query('SELECT COUNT(*) as total FROM servicos WHERE categoria_id = ?', [id]);
+      const servicosQuery = {
+        text: 'SELECT COUNT(*) as total FROM servicos WHERE categoria_id = $1',
+        values: [id]
+      };
+      const servicos = await db.query(servicosQuery);
       
-      if (servicos[0].total > 0) {
+      if (parseInt(servicos.rows[0].total) > 0) {
         throw new Error('Não é possível remover uma categoria que possui serviços associados');
       }
       
-      const result = await db.query('DELETE FROM categorias WHERE id = ?', [id]);
-      return result.affectedRows > 0;
+      const deleteQuery = {
+        text: 'DELETE FROM categorias WHERE id = $1 RETURNING *',
+        values: [id]
+      };
+      const result = await db.query(deleteQuery);
+      return result.rows.length > 0;
     } catch (error) {
       logger.error(`Erro ao remover categoria: ${error.message}`);
       throw error;
